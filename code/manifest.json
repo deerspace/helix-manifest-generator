@@ -1,10 +1,13 @@
 {
-  "name": "Helix Resolver",
-  "id": "helix-resolver",
+  "name": "Helix Manifest Generator",
+  "id": "helix-manifest-generator",
   "api": "1.0.0",
   "main": "code.js",
   "editorType": ["figma"],
-  "networkAccess": {
-    "allowedDomains": ["https://raw.githubusercontent.com"]
-  }
+  "menu": [
+    {
+      "name": "Generate Helix Manifest",
+      "command": "generate"
+    }
+  ]
 }
