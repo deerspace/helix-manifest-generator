@@ -1,14 +1,10 @@
 {
-  "networkAccess": {
-  "allowedDomains": ["raw.githubusercontent.com"]
-},
-
   "name": "Helix Resolver",
   "id": "helix-resolver",
   "api": "1.0.0",
   "main": "code.js",
   "editorType": ["figma"],
   "networkAccess": {
-    "allowedDomains": ["raw.githubusercontent.com"]
+    "allowedDomains": ["https://raw.githubusercontent.com"]
   }
 }
