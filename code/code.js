@@ -1,23 +1,23 @@
 // Helix Manifest Generator
 // Run inside the published Helix design system file
 
-function normalizeName(name: string): string {
+function normalizeName(name) {
   return name
     .toLowerCase()
     .replace(/\s+/g, "-")
     .replace(/[^\w-]/g, "");
 }
 
-function extractVariantProps(componentSet: ComponentSetNode): string[] {
+function extractVariantProps(componentSet) {
   const props = componentSet.variantGroupProperties;
   if (!props) return [];
   return Object.keys(props);
 }
 
 function generateManifest() {
-  const components: Record<string, any> = {};
+  const components = {};
 
-  function scan(node: BaseNode) {
+  function scan(node) {
     if (node.type === "COMPONENT_SET") {
       const semanticName = normalizeName(node.name);
 
